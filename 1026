@@ -1,0 +1,25 @@
+
+#include <cstdio>
+ 
+int main()
+{
+    int val, sum, max, min, i;
+ 
+    sum = 0;
+    max = 0;
+    min = 100;
+    for(i=1; i<=N; i++) {
+        scanf("%d", &val);
+ 
+        if(val > max)
+            max = val;
+        if(val < min)
+            min = val;
+ 
+        sum += val;
+    }
+ 
+    printf("%.3f\n", ((float)sum - max - min) / (N - 2));
+ 
+    return 0;
+}
